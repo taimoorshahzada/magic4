@@ -1,7 +1,9 @@
 This project has been created using ReactJS NextJS used GSAP for animations
 
 to run project first clone repository
-and run following commangs
+
+and run following commands
+
 npm install
 npm run dev
 
