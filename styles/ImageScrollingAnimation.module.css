@@ -1,0 +1,65 @@
+@font-face {
+	font-family: Futura-Medium;
+	src: url('../public/fonts/futura/Futura-Medium-bt.ttf');
+}
+@font-face {
+	font-family: Futura-Light;src: url('../public/fonts/futura/Futura-Light-bt.ttf');
+}
+.container {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	flex-direction: column;
+	transition: all 0.2s ease-out;
+	padding: 200px 0px;
+}
+
+.text {
+	font-size: 70px;
+	color: #ffffff99;
+	height: 100px;
+	margin-bottom: 100px;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	font-family: Futura-Light;
+	font-weight: 600;
+}
+
+.text:hover {
+	transform: scale(1.5);
+	color: #ffffff;
+}
+
+.middle {
+	font-size: 130px;
+}
+
+.zoom {
+	transform: scale(1.5);
+	color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+	.container {
+		height: 200vh;
+	}
+	.text {
+		font-size: 60px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		height: 170vh;
+        background-size: cover !important;
+			background-color: #fff !important;
+    background-attachment: scroll,fixed;
+	}
+	.text {
+		font-size: 32px;
+	}
+}

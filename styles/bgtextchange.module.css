@@ -1,0 +1,64 @@
+#bgchangetext {
+	font-size: 22px;
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+#backgroundImage {
+	width: 100%;
+	height: 100%;
+}
+
+#bgchangetext > p {
+	font-size: 3em;
+	background: linear-gradient(to right, black 50%, rgb(218, 218, 218) 50%);
+	background-size: 200% 100%;
+	background-position-x: 100%;
+	color: transparent;
+	background-clip: text;
+	line-height: 1.2;
+	margin-bottom: 0px;
+}
+.desktop {
+	display: block;
+}
+.mobile {
+	display: none;
+}
+
+#bgchangetext1 {
+	font-size: 22px;
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+#backgroundImage1 {
+	width: 100%;
+	height: 100%;
+}
+
+#bgchangetext1 > p {
+	font-size: 3em;
+	background: linear-gradient(to right, black 50%, rgb(218, 218, 218) 50%);
+	background-size: 200% 100%;
+	background-position-x: 100%;
+	color: transparent;
+	background-clip: text;
+	line-height: 1;
+	margin-bottom: 0px;
+}
+
+@media screen and (max-width: 800px) {
+	#bgchangetext {
+		font-size: 12px;
+	}
+	#bgchangetext > p {
+		line-height: 1;
+	}
+	#bgchangetext1 {
+		font-size: 12px;
+	}
+	#bgchangetext1 > p {
+		line-height: 1.2;
+	}
+}

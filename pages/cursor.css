@@ -1,0 +1,43 @@
+:root {
+  --white: whitesmoke;
+  --yellow: #ffd60a;
+  --darkblue: transparent;
+}
+
+::selection {
+  background: var(--yellow);
+  color: var(--darkblue);
+}
+
+
+.line-animation,
+.line-animation:hover {
+  color: var(--white);
+}
+
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.cursor-bee {
+  top: -15px;
+  left: -13px;
+  z-index: 9999999999 !important;
+}
+
+.cursor-eye {
+  top: -70px;
+  left: -70px;
+  padding: 20px;
+  z-index: 9999999999 !important;
+  border-radius: 50%;
+  background-color: var(--darkblue);
+}
+
+h1,h2,h3,h4,h5,h6,p{cursor: default !important;}
+@media screen and (max-width: 767px)
+{
+  .cursor-bee{display: none;}
+}

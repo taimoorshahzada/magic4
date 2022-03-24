@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #202125;
+  /* height: 3000px; */
+}
+
+.top-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 50;
+}
+
+.top-section a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.gallery-section {
+  height: 90vh;
+  overflow: hidden;
+  /* margin-top: 1000px; */
+  background-color: #000;
+}
+
+.gallery-image {
+  display: flex;
+  flex-direction: column;
+  transform: rotateZ(-45deg);
+}
+
+.gallery-image .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  transform: translateY(-300px) translateX(50px);
+}
+#wrapper {
+  width: 960px;
+}
+
+.gallery-image img {
+  height: 510px;
+  width: 310px;
+  object-fit: unset;
+}
+
+.gallery-image .img-box {
+  /* margin: 20px;
+  height: 400px;
+  width: 310px; */
+  height: 400px;
+  width: 310px;
+  margin-left: 20px;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+@media (max-width: 870px) {
+  .gallery-image .img-box {
+    height: 540px;
+    width: 500px;
+  }
+  .gallery-image img {
+    height: 650px;
+    width: 500px;
+  }
+  .gallery-section {
+    height: 125vh;
+  }
+  .gallery-image .row {
+    transform: translateY(-300px) translateX(-50px);
+  }
+}
+@media (max-width: 768px) {
+  .gallery-image .img-box {
+    height: 440px;
+    width: 450px;
+  }
+  .gallery-image img {
+    height: 550px;
+    width: 450px;
+  }
+  .gallery-section {
+    height: 100vh;
+  }
+}
+@media (max-width: 700px) {
+  .gallery-image .img-box {
+    height: 550px;
+    width: 450px;
+  }
+  .gallery-image img {
+    height: 550px;
+    width: 450px;
+  }
+}
+@media (max-width: 600px) {
+  .gallery-image .img-box {
+    height: 390px;
+    width: 400px;
+  }
+  .gallery-image img {
+    height: 500px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-image .img-box {
+    height: 320px;
+    width: 270px;
+  }
+  .gallery-image img {
+    height: 440px;
+    width: 280px;
+  }
+}
+
+/* @media (max-width: 380px) {
+  .gallery-image .img-box {
+    height: 320px;
+    width: 330px;
+  }
+  .gallery-image img {
+    height: 440px;
+    width: 290px;
+  }
+}
+@media (max-width: 380px){
+  .gallery-image .img-box {
+      height: 320px;
+      width: 280px;
+  }
+} */
+

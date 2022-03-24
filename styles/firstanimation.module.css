@@ -1,0 +1,153 @@
+#mainAnimFirstContainer {
+	display: flex;
+	font-size: 32px;
+	width: 100%;
+	font-weight: bold;
+	padding-top: 4em;
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	position: relative;
+	width: 100%;
+}
+
+#firstAnim {
+	padding-left: 1em;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	width: 100%;
+}
+
+#firstPartOfAnim {
+	display: flex;
+}
+
+#firstPartOfAnim > #hello {
+	font-size: 2em;
+	border-right: 1px solid black;
+	padding-right: 0.5em;
+	margin-right: 0.5em;
+	line-height: 1;
+}
+
+#absolutes {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 20em;
+}
+
+#absolutes > p {
+	font-size: 2em;
+	position: absolute;
+	line-height: 1;
+}
+
+#enjoycreaterelax {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#enjoycreaterelax > #firstenjoy {
+	font-size: 5.8em;
+	line-height: 1;
+	font-family: Futura-Heavy;
+}
+
+#lastenjoycontainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#enjoycreaterelax > #lastenjoycontainer > .lastenjoy {
+	font-size: 5.8em;
+	line-height: 1;
+	font-family: Futura-Heavy;
+}
+
+@media screen and (max-width: 1100px) {
+	#mainAnimFirstContainer {
+		margin-top: 2em;
+	}
+	#mainAnimFirstContainer {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#mainAnimFirstContainer {
+		font-size: 18px;
+	}
+	#firstPartOfAnim > #hello {
+		font-size: 1.8em;
+		border-right: 1px solid black;
+		padding-right: 0.5em;
+		margin-right: 0.5em;
+		line-height: 1;
+	}
+	#absolutes > p {
+		font-size: 1.8em;
+		position: absolute;
+		line-height: 1;
+	}
+	#lastenjoycontainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#mainAnimFirstContainer {
+		font-size: 17px;
+	}
+	#firstPartOfAnim > #hello {
+		font-size: 1.8em;
+		border-right: 1px solid black;
+		padding-right: 0.5em;
+		margin-right: 0.5em;
+		line-height: 1;
+	}
+	#absolutes > p {
+		font-size: 1.8em;
+		position: absolute;
+		line-height: 1;
+	}
+	#lastenjoycontainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#mainAnimFirstContainer {
+		font-size: 15px;
+	}
+	#firstPartOfAnim > #hello {
+		font-size: 1.8em;
+		border-right: 1px solid black;
+		padding-right: 0.5em;
+		margin-right: 0.5em;
+		line-height: 1;
+	}
+	#absolutes > p {
+		font-size: 1.8em;
+		position: absolute;
+		line-height: 1;
+	}
+	#lastenjoycontainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

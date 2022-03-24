@@ -1,0 +1,19 @@
+@media screen and (max-width: 700px) {
+  .animateMoveUp {
+    font-size: 30px;
+  }
+  #random1,
+  #random2,
+  #random3,
+  #random4,
+  #random5 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #animateFadeIn,
+  #divider {
+    font-size: 30px;
+  }
+}

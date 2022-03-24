@@ -1,0 +1,65 @@
+@font-face {
+	font-family: Futura-Medium;
+	src: url('../public/fonts/futura/Futura-Medium-bt.ttf');
+}
+
+#textOnImage {
+	position: relative;
+	font-size: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 8em;
+	margin-bottom: 6em;
+}
+
+#backgroundImageBig {
+	display: block;
+}
+
+#backgroundImageSmall {
+	display: none;
+}
+
+#h2container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: absolute;
+	top: -1.5em;
+}
+
+.textOnImageForeground {
+	font-size: 3.2em;
+	font-weight: bold;
+	color: #ffffff;
+	mix-blend-mode: difference;
+	font-family: Futura-Book;
+	line-height: 0.8;
+	padding: 0;
+	margin: 0;
+}
+
+.textOnImageForeground:nth-child(2) {
+	font-weight: normal;
+}
+
+@media screen and (max-width: 800px) {
+	#textOnImage {
+		font-size: 16px;
+	}
+	#h2container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: -4em;
+	}
+	#backgroundImageBig {
+		display: none;
+	}
+
+	#backgroundImageSmall {
+		display: block;
+	}
+}
