@@ -22,11 +22,7 @@ function ImageScrollingAnimation() {
   useEffect(() => {
     const onScroll = () => setOffset(window.pageYOffset);
     window.onload = () => {
-      if (window.innerWidth <= 600) {
-        setImages(smallImages);
-      } else {
-        setImages(bigImages);
-      }
+      setImages(bigImages);
     };
     // clean up code
     const { offsetTop } = containerRef.current;
@@ -81,6 +77,9 @@ function ImageScrollingAnimation() {
       text3.style.color = colorFade;
 
       container.style.backgroundImage = images[0];
+      container.style.backgroundAttachment = "fixed";
+      container.style.backgroundRepeat = "no-repeat";
+      container.style.backgroundSize = "cover";
       container.style.transition = "all .8s ease-in";
     } else if (textIndex == 2) {
       text1.style.transform = "scale(1)";
@@ -91,6 +90,9 @@ function ImageScrollingAnimation() {
       text3.style.color = colorFade;
 
       container.style.backgroundImage = images[1];
+      container.style.backgroundAttachment = "fixed";
+      container.style.backgroundRepeat = "no-repeat";
+      container.style.backgroundSize = "cover";
       container.style.transition = "all .8s ease-in";
     } else if (textIndex == 3) {
       text1.style.transform = "scale(1)";
@@ -101,6 +103,9 @@ function ImageScrollingAnimation() {
       text3.style.color = colorWhite;
 
       container.style.backgroundImage = images[2];
+      container.style.backgroundAttachment = "fixed";
+      container.style.backgroundRepeat = "no-repeat";
+      container.style.backgroundSize = "cover";
       container.style.transition = "all .8s ease-in";
     }
   }, [textIndex]);
