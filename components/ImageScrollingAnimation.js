@@ -77,7 +77,7 @@ function ImageScrollingAnimation() {
       text3.style.color = colorFade;
 
       container.style.backgroundImage = images[0];
-      container.style.backgroundAttachment = "fixed";
+      // container.style.backgroundAttachment = "fixed";
       container.style.backgroundRepeat = "no-repeat";
       container.style.backgroundSize = "cover";
       container.style.backgroundPosition = "center center";
@@ -91,7 +91,7 @@ function ImageScrollingAnimation() {
       text3.style.color = colorFade;
 
       container.style.backgroundImage = images[1];
-      container.style.backgroundAttachment = "fixed";
+      // container.style.backgroundAttachment = "fixed";
       container.style.backgroundRepeat = "no-repeat";
       container.style.backgroundSize = "cover";
       container.style.backgroundPosition = "center center";
@@ -105,7 +105,7 @@ function ImageScrollingAnimation() {
       text3.style.color = colorWhite;
 
       container.style.backgroundImage = images[2];
-      container.style.backgroundAttachment = "fixed";
+      // container.style.backgroundAttachment = "fixed";
       container.style.backgroundRepeat = "no-repeat";
       container.style.backgroundSize = "cover";
       container.style.backgroundPosition = "center center";
