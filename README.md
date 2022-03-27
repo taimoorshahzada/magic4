@@ -8,3 +8,4 @@ npm install
 npm run dev
 
 It will start server at localhost:3000
+# magic4
