@@ -14,10 +14,21 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-
+  background-position: center center;
+  -webkit-background-position: center center;
   -webkit-background-repeat: no-repeat;
   -webkit-background-attachment: fixed;
   -webkit-background-size: cover;
+
+  -moz-background-position: center center;
+  -moz-background-repeat: no-repeat;
+  -moz-background-attachment: fixed;
+  -moz-background-size: cover;
+
+  -o-background-position: center center;
+  -o-background-repeat: no-repeat;
+  -o-background-attachment: fixed;
+  -o-background-size: cover;
   height: 300vh;
   flex-direction: column;
   transition: all 0.2s ease-out;
@@ -71,5 +82,28 @@
   }
   .zoom {
     transform: scale(1.2);
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .container {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-position: center center;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-attachment: fixed;
+    -webkit-background-size: cover;
+
+    -moz-background-position: center center;
+    -moz-background-repeat: no-repeat;
+    -moz-background-attachment: fixed;
+    -moz-background-size: cover;
+
+    -o-background-position: center center;
+    -o-background-repeat: no-repeat;
+    -o-background-attachment: fixed;
+    -o-background-size: cover;
   }
 }
