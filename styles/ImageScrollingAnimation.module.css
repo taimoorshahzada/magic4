@@ -1,65 +1,71 @@
 @font-face {
-	font-family: Futura-Medium;
-	src: url('../public/fonts/futura/Futura-Medium-bt.ttf');
+  font-family: Futura-Medium;
+  src: url("../public/fonts/futura/Futura-Medium-bt.ttf");
 }
 @font-face {
-	font-family: Futura-Light;src: url('../public/fonts/futura/Futura-Light-bt.ttf');
+  font-family: Futura-Light;
+  src: url("../public/fonts/futura/Futura-Light-bt.ttf");
 }
 .container {
-	width: 100vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	flex-direction: column;
-	transition: all 0.2s ease-out;
-	padding: 200px 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300vh;
+  flex-direction: column;
+  transition: all 0.2s ease-out;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .text {
-	font-size: 70px;
-	color: #ffffff99;
-	height: 100px;
-	margin-bottom: 100px;
-	transition: all 0.5s ease;
-	cursor: pointer;
-	font-family: Futura-Light;
-	font-weight: 600;
+  font-size: 70px;
+  color: #ffffff99;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: all 0.5s ease;
+  height: 50vh;
+  cursor: pointer;
+  font-family: Futura-Light;
+  font-weight: 600;
 }
 
 .text:hover {
-	transform: scale(1.5);
-	color: #ffffff;
+  transform: scale(1.5);
+  color: #ffffff;
 }
-
+.text p {
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff8a;
+}
 .middle {
-	font-size: 130px;
+  font-size: 130px;
 }
 
 .zoom {
-	transform: scale(1.5);
-	color: #ffffff;
+  transform: scale(1.5);
+  color: #ffffff;
 }
 
-@media screen and (max-width: 800px) {
-	.container {
-		height: 200vh;
-	}
-	.text {
-		font-size: 60px;
-	}
+@media (max-width: 800px) {
+  .text {
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .zoom {
+    transform: scale(1.2);
+  }
 }
-
-@media screen and (max-width: 600px) {
-	.container {
-		height: 170vh;
-        background-size: cover !important;
-			background-color: #fff !important;
-    background-attachment: scroll,fixed;
-	}
-	.text {
-		font-size: 32px;
-	}
+@media (max-width: 500px) {
+  .text {
+    font-size: 30px;
+  }
+  .zoom {
+    transform: scale(1.2);
+  }
 }
