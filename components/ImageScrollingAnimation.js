@@ -80,6 +80,7 @@ function ImageScrollingAnimation() {
       container.style.backgroundAttachment = "fixed";
       container.style.backgroundRepeat = "no-repeat";
       container.style.backgroundSize = "cover";
+      container.style.backgroundPosition = "center center";
       container.style.transition = "all .8s ease-in";
     } else if (textIndex == 2) {
       text1.style.transform = "scale(1)";
@@ -93,6 +94,7 @@ function ImageScrollingAnimation() {
       container.style.backgroundAttachment = "fixed";
       container.style.backgroundRepeat = "no-repeat";
       container.style.backgroundSize = "cover";
+      container.style.backgroundPosition = "center center";
       container.style.transition = "all .8s ease-in";
     } else if (textIndex == 3) {
       text1.style.transform = "scale(1)";
@@ -106,6 +108,7 @@ function ImageScrollingAnimation() {
       container.style.backgroundAttachment = "fixed";
       container.style.backgroundRepeat = "no-repeat";
       container.style.backgroundSize = "cover";
+      container.style.backgroundPosition = "center center";
       container.style.transition = "all .8s ease-in";
     }
   }, [textIndex]);
