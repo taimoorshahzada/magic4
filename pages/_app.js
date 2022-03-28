@@ -23,5 +23,10 @@ export default function MyApp({ Component, pageProps }) {
     TagManager.initialize({ gtmId: "G-344TBBFY65" });
     /* GTM Pixel Start */
   });
-  return <Component {...pageProps} />;
+  return (
+    <>
+      {/* <Scroll /> */}
+      <Component {...pageProps} />;
+    </>
+  );
 }
