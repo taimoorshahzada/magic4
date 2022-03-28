@@ -25,7 +25,7 @@ export default function MyApp({ Component, pageProps }) {
   });
   return (
     <>
-      {/* <Scroll /> */}
+      <Scroll />
       <Component {...pageProps} />;
     </>
   );
